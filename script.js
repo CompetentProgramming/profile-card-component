@@ -1,3 +1,5 @@
+if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    
 const user = document.querySelector('.user-card');
 const name = document.querySelector('.user-name');
 const country = document.querySelector('.country');
@@ -25,13 +27,14 @@ user.addEventListener('mouseenter', () => {
 });
 
 user.addEventListener('mouseleave', () => {
-    name.style.transform = 'translateZ(0)';
-    country.style.transform = 'translateZ(0)';
-    image.style.transform = 'translateZ(0)';
+    name.style.transform = 'none';
+    country.style.transform = 'none';
+    image.style.transform = 'none';
     statsCount.forEach(item => {
-        item.style.transform = 'translateZ(0)';
+        item.style.transform = 'none';
     });
     statsAttr.forEach(item => {
-        item.style.transform = 'translateZ(0)';
+        item.style.transform = 'none';
     });
 });
+}

@@ -77,9 +77,9 @@ body {
 .stats .count {
     font-weight: 700;
     font-size: 1.1rem;
+    line-height: 1.5rem;
     margin-bottom: 5px;
     transition: all .3s ease-in;
-    margin-bottom: 9px;
 }
 
 .stats .attribute {
