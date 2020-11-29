@@ -1,0 +1,97 @@
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font: 18px/1 'Kumbh Sans', sans-serif;
+    perspective: 500px;
+    background: -19vw -50vh url(./images/bg-pattern-top.svg) no-repeat, 50vw 50vh url(./images/bg-pattern-bottom.svg) no-repeat, hsl(185, 75%, 39%);
+}
+
+.user-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    transform-style: preserve-3d;
+    padding: 0 0 15px;
+}
+
+.pattern-top {
+    height: 140px;
+    background: 0 0 url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    padding-top: 87px;
+    margin-bottom: 74px;
+    border-radius: 10px 10px 0 0;
+}
+
+.pattern-top img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    transition: all .3s ease-in;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 11px;
+    transition: all .3s ease-in;
+}
+
+.user-name span {
+    font-weight: 200;
+    color: hsl(227, 10%, 46%);
+}
+
+.country {
+    font-weight: 200;
+    color: hsl(227, 10%, 46%);
+    transition: all .3s ease-in;
+    font-size: .9rem;
+    margin-bottom: 27px;
+}
+
+.stats {
+    padding: 0;
+    list-style-type: none;
+    border-top: 1px solid hsl(0, 0%, 89%);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stats li {
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+.stats .count {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    transition: all .3s ease-in;
+    margin-bottom: 9px;
+}
+
+.stats .attribute {
+    font-weight: 200;
+    color: hsl(0, 0%, 59%);
+    font-size: .7rem;
+    transition: all .3s ease-in;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: -841px -56vh url(./images/bg-pattern-top.svg) no-repeat, 50vw 50vh url(./images/bg-pattern-bottom.svg) no-repeat, hsl(185, 75%, 39%);
+    }
+}
